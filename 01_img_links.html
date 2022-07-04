@@ -4,75 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>img altynai</title>
+    <link rel="stylesheet" href="02_selectors.css">
+    <title> Altynai resume</title>
+    
+  
+
 </head>
 <body>
+<div class="container">
+     <div class="info">
+        <img src="https://klike.net/uploads/posts/2020-11/1605348788_1.jpg" alt="Shangitbayeva Altynai" >
+        <div class="info-text">
 
-<img src="https://klike.net/uploads/posts/2020-11/1605348788_1.jpg" alt="Shangitbayeva Altynai" width="200">
+            <h1> Shangitbayeva Altynai </h1>
+                
+            <p id=paragraf1>  Я основатель одноименного <strong>Ютуб канала</strong> и онлайн школы по программированию School </p> 
+            
+            <p id=paragraf2>  Я люблю <em>заниматься спортом, программировать и путешествовать</em> </p> 
 
-<h1> Shangitbayeva Altynai </h1>
-
-
- </p>  Я основатель одноименного <strong>Ютуб канала</strong> и онлайн школы по программированию Резалт скул </p> 
-<br>
-</p>  Я люблю <em>заниматься спортом, программировать и путешествовать</em> </p> 
-
-<h2>Список социальных сетей:</h2>
-<br>
-<a href="https://instagram.com" target="_blank"> instagram|</a>
-<a href="https//:telegram.com" target="_blank"> Telegram|</a>
-<a href="htttps//:Youtube.com" target="_blank"> Youtube</a>
+            <h2>Список социальных сетей:</h2>
+            <br>
+            <a href="https://instagram.com" target="_blank"> Instagram|</a>
+            <a href="https//:telegram.com" target="_blank"> Telegram|</a>
+            <a href="htttps//:Youtube.com" target="_blank"> Youtube</a>
+        </div>
+    </div>
+ <div class="hobby">
 <h2>Мои хобби</h2>
-<ol>
+<ol class="list">
      <li>Путешествие</li>
      <li>Горные лыжи</li>
      <li> Готовить</li>
 
 </ol>
-<hr>
-<h2>Опыт работы</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Год</th> 
-          </tr>  
-         
-    </thead>
-  <tbody>
-    <tr>
-        <td>Tracker</td>
-        <td>Frontend</td>
-        <td>2015-2016</td>
-    </tr>
-    <tr>
-        <td>SOS</td>
-        <td>Senior frontend</td>
-        <td>2017-2019</td>
-    </tr>
-  </tbody>
- </table>
- <h1>Связаться со мной</h1>
- <br>
- <form>
-     <div>
-         <label for="Name">Ваше имя:</label>
-         <input type="Name" id="Name" placeholder="Введите имя">
-     </div>
+</div>
+<div class="work">
+    <h2>Опыт работы</h2>
+    <table class="table">
+         <!-- <thead>
+            <tr>
+                <th>Название</th>
+                <th>Должность</th>
+                <th>Год</th> 
+            </tr>  
+            
+        </thead> -->
+        <tbody>
+            <tr>
+                <td>Tracker</td>
+                <td>Frontend</td>
+                <td>2015-2016</td>
+            </tr>
+            <tr>
+                <td>SOS</td>
+                <td>Senior frontend</td>
+                <td>2017-2019</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-     <div>
+<div class="work1">
+ 
+ <br>
+ <form action="/" class="form">
+    <h2>Связаться со мной</h2>
+
+<div class="form-row">
+    <div class="form-group">
+        <label for="Name" >Ваше имя:</label>
+        <input type="Name"  id="Name" placeholder="Введите имя">
+    </div>
+     
+    <div class="form-group">
         <label for="Email">Ваш email:</label>
         <input type="EMAIL" id="eMAIL" placeholder="Введите email">
     </div>
+</div>
 
-    <div>
+
+    <div class="form-group">
         <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="25" row="10" placeholder="Введите сообщение..."></textarea>
+        <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
     </div>
-    <button type="submit">Отправить!</button>
+    <button class="btn" type="submit" >Отправить!</button>
     </form>
+    </div>
+</div>
     
 </body>
 </html>
